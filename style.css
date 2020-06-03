@@ -1,0 +1,61 @@
+body {
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: black;
+    padding: 2.5rem 1rem 0 1rem;
+    display: grid;
+    height: 400px;
+    width: 300px;
+}
+
+.buttons {
+    display: grid;
+    height: 300px;
+    width: 300px;
+    margin-top: 1rem;
+    gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+button {
+    border-radius: 50%;
+    font-size: 16px;
+    border: none;
+    color: white;
+}
+
+.number, .dot {
+    background-color: rgb(72, 74, 79);
+}
+.number:hover,
+.dot:hover {
+    background-color: rgb(72, 74, 79, 0.8);
+    cursor: pointer;
+}
+
+.operator {
+    background-color: rgb(255, 174, 0);
+}
+
+.operator:hover {
+    background-color: rgba(255, 174, 0, 0.8);
+    cursor: pointer;
+}
+
+.display {
+    text-align: right;
+    height: 90%;
+    color: white;
+    font-size: 30px;
+}
+
+
+
